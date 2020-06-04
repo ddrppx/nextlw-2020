@@ -8,11 +8,38 @@ routes.get('/items', async (request, response) => {
 
     const serializedItems = items.map(item => {
         return {
+            id: item.id, 
             title: item.name,
             image_url: `http://localhost:3333/uploads/${item.image}`,
         };
     })
     return response.json(items);
+});
+
+routes.post('/points', async (request, response) => {
+    const {
+        name,
+        email,
+        whatsapp,
+        latitude,
+        longitude,
+        city,
+        uf,
+        items
+    } = request.body;
+
+    await knex('points').insert({
+        image: 'image-fake',
+        name,
+        email,
+        whatsapp,
+        latitude,
+        longitude,
+        city,
+        uf
+    });
+
+    return response.json({ success: true });
 });
 
 export default routes;
