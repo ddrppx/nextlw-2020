@@ -79,4 +79,4 @@ class PointsController{
     }
 }
 
-export default PointsController;
+export default PointsController; 
