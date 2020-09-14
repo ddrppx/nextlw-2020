@@ -1,5 +1,3 @@
 <h1>Next Level Week</h1>
 
-<h3>Rocketseat</h3>
-<p>Aulas da Rocketseat Next Level Week.</p>
-<p>App Ecoleta, desenvolvido com React, Typescript. </p>
+<p>App Ecoleta, desenvolvido na Semana Next Leve Week da <a href="https://rocketseat.com.br" target="_blank">Rocketseat</a> com React, Typescript. </p>
